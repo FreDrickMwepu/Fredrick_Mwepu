@@ -8,6 +8,17 @@
      scroll-snap-type: y mandatory;
      overflow-y: scroll;
    }
+
+   .title-bar {
+    background-color: #1A1A1A;
+    color: #ffffff;
+    padding: 20px 0px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    text-align: center;
+    z-index: 999;
+   }
    
    .item {
      display: flex;
@@ -46,7 +57,7 @@
    
    .scroll-bar div {
      position: absolute;
-     background-color: #1583FF;
+     background-color: #0CFFBB;
      width: 10%;
      height: 14px;
      border-radius: 10px;
@@ -54,7 +65,7 @@
    
    .year {
      position: absolute;
-     color: #1583FF;
+     color: #0CFFBB;
      font-size: 18px;
      font-weight: 600;
      margin-bottom: 8vh;

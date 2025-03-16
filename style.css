@@ -4,6 +4,14 @@
      justify-content: center;
      height: 100vh;
      margin: 0;
+     min-height: 100vh;
+     display: flex;
+     align-items: center;
+   }
+
+   .image img {
+    max-width: 100%;
+    height: auto;
    }
    
    .text {
@@ -70,7 +78,6 @@
    }
    
    .white-button {
-     font-family: "Book";
      font-weight: 500;
      display: inline-block;
      padding: 10px 20px;
@@ -85,7 +92,7 @@
    }
    
    .blue-button:hover {
-     background-color: #439afe;
+     background-color: #10b082;
      transition: 0.3s;
    }
    
@@ -94,6 +101,11 @@
      transition: 0.3s;
    }
    
+   .button-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    }
    .button-grid {
      border-collapse: collapse;
      width: 50%;
@@ -165,7 +177,7 @@
    }
    
    .titlebutton:hover:before {
-     color: #439afe;
+     color: #0CFFBB;
      width: 100%;
      padding: 0;
    }
@@ -241,3 +253,183 @@
        font-family: brigendis;
        src: url(/fonts/brigendis.otf);
    }
+
+.skills-container {
+  color: #B1B1B1;
+  font-size: clamp(1rem, 1.8vw, 1.5rem);
+  font-weight: 450;
+  margin-bottom: 50px;
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+.skill-item {
+  padding: 0.5em 1em;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  cursor: default;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.skill-item:hover {
+  color: var(--accent-color);
+  background: rgba(12, 255, 187, 0.1);
+  transform: translateY(-2px);
+}
+
+.skill-item i {
+  transition: transform 0.3s ease;
+}
+
+.skill-item:hover i {
+  transform: scale(1.2);
+}
+
+.separator {
+  color: #B1B1B1;
+  opacity: 0.5;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+  .skills-container {
+    font-size: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .skill-item {
+    padding: 0.3em 0.8em;
+  }
+}
+
+/* Typewriter styles */
+:root {
+  --cursor-color: #0CFFBB;
+  --text-color: #ffffff;
+  --cursor-width: 3px;
+  --blink-speed: 0.7s;
+}
+
+#typewriter {
+  display: inline-block;
+  color: var(--text-color);
+  white-space: pre-wrap;
+  line-height: 1.5;
+  font-size: clamp(1rem, 1.2vw, 1.5rem);
+  min-height: 3em;
+}
+
+#typewriter strong {
+  color: var(--cursor-color);
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.typewriter-cursor {
+  display: inline-block;
+  width: var(--cursor-width);
+  height: 1.2em;
+  background-color: var(--cursor-color);
+  margin-left: 2px;
+  vertical-align: middle;
+  animation: blink var(--blink-speed) infinite;
+  box-shadow: 0 0 8px rgba(12, 255, 187, 0.4);
+  border-radius: 1px;
+}
+
+@keyframes blink {
+  0%, 100% { 
+    opacity: 1;
+    transform: scaleY(1);
+  }
+  50% { 
+    opacity: 0;
+    transform: scaleY(0.8);
+  }
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+  #typewriter {
+    font-size: 1rem;
+    line-height: 1.4;
+  }
+
+  .typewriter-cursor {
+    height: 1em;
+  }
+}
+
+.image-container {
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.image-wrapper {
+    position: relative;
+    animation: float 6s ease-in-out infinite;
+}
+
+.profile-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 20px;
+    filter: drop-shadow(0 10px 20px rgba(12, 255, 187, 0.1));
+    transition: all 0.3s ease;
+}
+
+.image-glow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at 50% 50%, rgba(12, 255, 187, 0.2), transparent 70%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+}
+
+.image-wrapper:hover .profile-image {
+    transform: scale(1.02) translateY(-5px);
+    filter: drop-shadow(0 15px 30px rgba(12, 255, 187, 0.2));
+}
+
+.image-wrapper:hover .image-glow {
+    opacity: 1;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-15px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+    .image-container {
+        max-width: 300px;
+    }
+    
+    @keyframes float {
+        0%, 100% {
+            transform: translateY(0px);
+        }
+        50% {
+            transform: translateY(-10px);
+        }
+    }
+}

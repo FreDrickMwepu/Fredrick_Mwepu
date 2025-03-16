@@ -8,6 +8,7 @@
   <title>Fredrick M</title>
   <script src="https://kit.fontawesome.com/2c47143655.js" crossorigin="anonymous"></script>
   <script src="script.js"></script>
+  <script src="typewriter.js"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300&display=swap" rel="stylesheet">
@@ -21,7 +22,55 @@
       justify-content: center;
       width: 80%;
       margin: 0 auto;
+      flex-direction: column-reverse;
+      padding: 20px;
     }
+    /* Media Queries for Responsiveness */
+    @media screen and (min-width: 768px) {
+      .container {
+          flex-direction: row;
+          width: 80%;
+      }
+    }
+
+    @media screen and (max-width: 767px) {
+      .text. h1 {
+        font-size: 2rem;
+        margin-top: 2rem;
+      }
+      .nospace {
+        font-size: 1rem !important;
+      }
+    
+      .blue-button,
+      .white-botton {
+        display: block;
+        width: 100%;
+        margin: 10px 0 !important;
+        padding: 15px !important;
+        text-align: center;
+      }
+      .image {
+        width: 80%;
+        margin: 0 auto;
+      }
+      .title-bar {
+        padding: 10px
+      }
+      .titlebutton {
+        padding: 8px 12px;
+        font-size: 0.9rem;
+      }
+   }
+   @media screen and (min-width: 768px) and (max-width: 1024px) {
+    .text h1 {
+        font-size: 2.5rem;
+    }
+
+    .nospace {
+        font-size: 1.2rem !important;
+    }
+  }
   </style>
 </head>
 
@@ -39,8 +88,20 @@
           <h1 style="margin-bottom: 2vh;">
             Hi! I'm <span class="accent">Freick Mwepu</span>
           </h1>
-          <span class="nospace" style="color: #B1B1B1; font-size: 1.8vw; font-weight: 450; margin-bottom: 50px;"><i
-              class="fa-solid fa-hammer"></i> MAKER&emsp;·&emsp;<i class="fa-solid fa-pen-nib"></i> DESIGNER&emsp;·&emsp;<i class="fa-solid fa-lightbulb"></i> ENGINEER</span>
+          <p id="typewriter" style="margin-bottom: 1vh;"></p>
+          <span style="margin-top: 2vh;" class="skills-container">
+            <span class="skill-item">
+              <i class="fa-solid fa-hammer"></i> MAKER
+            </span>
+            <span class="separator">·</span>
+            <span class="skill-item">
+              <i class="fa-solid fa-pen-nib"></i> DESIGNER
+            </span>
+            <span class="separator">·</span>
+            <span class="skill-item">
+              <i class="fa-solid fa-lightbulb"></i> ENGINEER
+            </span>
+          </span>
         </div>
         <div>
           <a href="/projects" style="padding: 1.5vw 3vw;" class="blue-button">MY PROJECTS&emsp;<i
@@ -49,8 +110,11 @@
             class=" fa-solid fa-chevron-right"></i></a>
         </div>
       </div>
-      <div class="image">
-        <img style="max-width: 100%; height: auto;" src="/photos/fred.png" alt="Fredrick Mwepu">
+      <div class="image-container">
+          <div class="image-wrapper">
+              <img class="profile-image" src="/photos/fred.png" alt="Fredrick Mwepu">
+              <div class="image-glow"></div>
+          </div>
       </div>
     </div>
   </div>
