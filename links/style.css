@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Gotham:wght@300;400;500;600;700&display=swap');
+
+* {
+  box-sizing: border-box
+}
+
+body {
+  max-height: 100vh;
+  height: 100vh;
+  margin: 0;
+  display: flex;
+}
+
+.text {
+  flex: 2;
+  font-weight: bold;
+  padding: 10px;
+}
+
+.image {
+  flex: 1;
+  text-align: center;
+}
+
+.nospace {
+  white-space: pre;
+}
+
+h1 {
+  color: white;
+  font-size: 6vw;
+}
+
+h2 {
+  color: #0CFFBB;
+  font-size: 3vw;
+}
+
+h3 {
+  color: white;
+  font-size: 1.5vw;
+  font-weight: 450;
+}
+
+p {
+  color: white;
+  font-size: 1vw;
+}
+
+.accent {
+  color: #0CFFBB;
+}
+
+.button-grid {
+  border-collapse: collapse;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.selected:before {
+  content: '';
+  border-bottom: 2px solid #0CFFBB;
+  padding: 0 10px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 0;
+  transition: 0.3s;
+}
+
+.selected {
+  font-weight: 500;
+  color: #0CFFBB;
+}
+
+.content-left {
+  position: relative;
+  margin-left: 10vw;
+  justify-content: center;
+  flex: 1;
+  display: flex;
+  margin-top: 5vh;
+  flex-direction: column;
+}
+
+.content-right {
+  align-items: center;
+  display: flex;
+  margin-right: 10vw;
+  margin-top: 5vh;
+}
+
+.link {
+  display: flex;
+  align-items: center;
+  width: 30vw;
+  height: 5vw;
+  border: none;
+  cursor: pointer;
+  border-radius: 1000px;
+  background-color: #282828;
+  font-weight: 500;
+  font-size: 1.7vw;
+  padding: 0;
+  color: #ffffff;
+  margin-bottom: 1vw;
+  text-decoration: none;
+}
+
+.link-icon {
+  width: 3vw;
+  height: 3vw;
+  margin-left: 1vw;
+  border-radius: 1000px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  font-size: 2vw;
+}
+
+.link:hover {
+  background-color: #6b6b6b;
+  transition: 0.3s;
+}
+
+.link-text {
+  justify-position: left;
+  margin-left: 2vw;
+  font-size: 2vw;
+}

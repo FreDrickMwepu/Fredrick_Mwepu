@@ -1,0 +1,870 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="/style.css">
+<link rel="stylesheet" href="style.css">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fredrick Mwepu | Projects</title>
+  <script src="https://kit.fontawesome.com/2c47143655.js" crossorigin="anonymous"></script>
+  <script src="scroll.js"></script>
+  <link rel="icon" type="image/png" sizes="32x32" href="/Photos/logo.svg">
+  <link rel="icon" type="image/png" sizes="16x16" href="/Photos/logo.svg">
+  <link rel="apple-touch-icon" sizes="180x180" href="/Photos/logo.svg">
+</head>
+
+<body style="margin-left: 0px; margin-right: 0px; margin-top: 0px; margin-bottom: 0px;">
+
+  <div class="title-bar">
+    <a href="/" class="titlebutton">Home</a>
+    <a href="/projects" class="titlebutton selected">Projects</a>
+    <a href="/links" class="titlebutton">Links</a>
+  </div>
+
+  <div class="item" id="welcome" style="justify-content: center; align-items: center;">
+    <div class="content-center">
+      <h1 style="margin-top: 0px; margin-bottom: 1vh;">Welcome to My Projects!</h1>
+
+      <h2 style="font-weight: 500;">Scroll or use the buttons to view everything I've created so far.</h2>
+
+      <div class="photo-button">
+        <button style="padding: 1.5vw 3vw; margin-right: 1vw;" class="white-button" onclick="newest()">NEWEST
+          PROJECTS&emsp;<i class="fa-solid fa-chevron-down"></i></button>
+        <button style="padding: 1.5vw 3vw;" class="white-button" onclick="oldest()">OLDEST PROJECTS&emsp;<i
+            class="fa-solid fa-angles-down"></i></button>
+      </div>
+
+      <h3 style="margin-top: 4vh; margin-bottom: 0px;"><span class="star">*</span> - highlighted project</h3>
+      <h3 style="margin-top: 4px;"><span class="inprog">*</span> - project in progress</h3>
+
+    </div>
+  </div>
+
+  <div class="item" id="opencv">
+    <div class="content-left">
+      <h1 style="margin-top: 0px; margin-bottom: 1vh; font-family:brigendis; font-weight:400;">OpenCV <span
+          class="inprog">*</span></h1>
+
+      <p style="margin-bottom: 1vh;">I recently embarked on an exciting journey into the world of computer vision, and
+        I’m thrilled to share my latest project! I’ve combined the power of OpenCV and Arduino to create an interactive
+        application that uses computer vision to control hardware. This project showcases how technology can bridge the
+        gap between digital perception and physical action in a fun and practical way.</p>
+
+      <p style="margin-bottom: 1vh;">Here’s how it works: A webcam captures a live video feed, and OpenCV detects the
+        number of fingers I show to the camera. Based on the detected count, the system turns specific LEDs on or off
+        using an Arduino board. PyFirmata is used to facilitate communication between OpenCV and the Arduino, ensuring
+        real-time responsiveness. The result? A simple yet effective way to control hardware through hand gestures!</p>
+
+      <p style="margin-bottom: 1vh;">I started learning computer vision to explore its endless possibilities, and this
+        project is just the beginning. Seeing the LEDs light up based on my hand gestures was incredibly satisfying (I
+        bet the lowkey smile on my face says it all)! This is a small step toward more complex projects, and I’m eager
+        to explore advanced computer vision techniques and integrate them with hardware-based systems to create even
+        more interactive applications. The potential is limitless! 🚀</p>
+      <div style="margin-top: 20px" class="photo-button">
+        <a href="https://www.instagram.com/reporttheride/" style="padding: 1.5vw 3vw;" class="white-button"
+          target="_blank">Learn More&emsp;<i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+      </div>
+    </div>
+
+    <div class="content-right">
+      <div class="opencv-slide">
+        <div class="numbertext">1 / 6</div>
+        <img loading="lazy" class="slideimg" src="/photos/OpenCV/opencv.jpeg">
+        <div class="text">Final (ish) version of Lumle, will post photos of stand soon, might also CNC a metal enclosure
+        </div>
+      </div>
+
+      <div class="opencv-slide">
+        <div class="numbertext">2 / 6</div>
+        <img loading="lazy" class="slideimg" src="/photos/OpenCV/opencv1.png">
+        <div class="text">First prototype</div>
+      </div>
+
+      <div class="opencv-slide">
+        <div class="numbertext">3 / 6</div>
+        <img loading="lazy" class="slideimg" src="/photos/OpenCV/opencv2.png">
+        <div class="text">Animation testing</div>
+      </div>
+
+      <div class="opencv-slide">
+        <div class="numbertext">4 / 6</div>
+        <img loading="lazy" class="slideimg" src="/photos/OpenCV/opencv3.png">
+        <div class="text">Google Calendar implementation</div>
+      </div>
+
+      <div class="opencv-slide">
+        <div class="numbertext">5 / 6</div>
+        <img loading="lazy" class="slideimg" src="/photos/OpenCV/opencv4.png">
+        <div class="text">Events shown with correct time and only on current day</div>
+      </div>
+
+      <div class="opencv-slide">
+        <div class="numbertext">6 / 6</div>
+        <img loading="lazy" class="slideimg" src="/photos/OpenCV/opencv5.png">
+        <div class="text">Electronics in 3D printed case with larger OLED display</div>
+      </div>
+
+      <a class="prev" onclick="plusSlides(-1, 27)"><i class="fa-solid fa-chevron-left"></i></a>
+      <a class="next" onclick="plusSlides(1, 27)"><i class="fa-solid fa-chevron-right"></i></a>
+    </div>
+  </div>
+
+  <div class="item" id="bike">
+    <div class="content-left">
+      <h1 style="margin-top: 0px; margin-bottom: 1vh;">A (not so) Electric Bike <span class="star">*</span></h1>
+
+      <p style="margin-bottom: 1vh;">In March of 2021 I got an email from Arduino, promoting a competition they were
+        holding. Interested, I quickly thought of a project idea. Since I had been biking a lot, sometimes at night, I
+        wanted to design an all-in-one lighting and information system.</p>
+
+      <p style="margin-bottom: 1vh;">The electronics were fun on this one. I used a knock-off Arduino MEGA that was tiny
+        so it could fit in a small case. Taking inspiration off my scoreboard, I used addressable LEDs to make the front
+        and back lights. These had more than one upside, as while being super easy to wire, also allowed me to animate
+        the turn signals on the bike. I added a GPS module to give me speed and distance, and displayed the information
+        on two OLED displays. However, my favorite part of this build were the power, light, and horn buttons, for which
+        I used tactile stainless steel buttons. And let me just say that they were soooo satisfying to press. I finished
+        this project by 3D printing a case that matched my bike to put it all together.</p>
+
+      <p style="margin-bottom: 5vh;">While I didn’t win, I had a great time building it and used it all the time... that
+        was until my bike got stolen.</p>
+      <div class="photo-button">
+        <a href="https://www.youtube.com/watch?v=p7DILHsOUxs" style="padding: 1.5vw 3vw;" class="white-button"
+          target="_blank">WATCH VIDEO&emsp;<i class="fa-brands fa-youtube"></i></a>
+      </div>
+    </div>
+    <div class="content-right">
+      <div class="bike-slide">
+        <div class="numbertext">1 / 11</div>
+        <img loading="lazy" class="slideimg" src="/photos/bike/IMG_0124.JPG">
+        <div class="text">Finished bike system</div>
+      </div>
+
+      <div class="bike-slide">
+        <div class="numbertext">2 / 11</div>
+        <img loading="lazy" class="slideimg" src="/photos/bike/IMG_0032.JPG">
+        <div class="text">All parts laid out</div>
+      </div>
+
+      <div class="bike-slide">
+        <div class="numbertext">3 / 11</div>
+        <img loading="lazy" class="slideimg" src="/photos/bike/IMG_0044.JPG">
+        <div class="text">3D printed case sanded</div>
+      </div>
+
+      <div class="bike-slide">
+        <div class="numbertext">4 / 11</div>
+        <img loading="lazy" class="slideimg" src="/photos/bike/IMG_0048.JPG">
+        <div class="text">3D printed case painted and polished, buttons installed</div>
+      </div>
+
+      <div class="bike-slide">
+        <div class="numbertext">5 / 11</div>
+        <img loading="lazy" class="slideimg" src="/photos/bike/IMG_0046.JPG">
+        <div class="text">Both cases attached to bike</div>
+      </div>
+
+      <div class="bike-slide">
+        <div class="numbertext">6 / 11</div>
+        <img loading="lazy" class="slideimg" src="/photos/bike/build1.png">
+        <div class="text">Installing buttons and Arduino to cases</div>
+      </div>
+
+      <div class="bike-slide">
+        <div class="numbertext">7 / 11</div>
+        <img loading="lazy" class="slideimg" src="/photos/bike/build2.png">
+        <div class="text">Installing GPS and rotary encoder</div>
+      </div>
+
+      <div class="bike-slide">
+        <div class="numbertext">8 / 11</div>
+        <img loading="lazy" class="slideimg" src="/photos/bike/build3.png">
+        <div class="text">All wires soldered inside bike</div>
+      </div>
+
+      <div class="bike-slide">
+        <div class="numbertext">9 / 11</div>
+        <img loading="lazy" class="slideimg" src="/photos/bike/IMG_0074.png">
+        <div class="text">Finished UI</div>
+      </div>
+
+      <div class="bike-slide">
+        <div class="numbertext">10 / 11</div>
+        <img loading="lazy" class="slideimg" src="/photos/bike/IMG_0147.JPG">
+        <div class="text">Video published for Arduino Challenge</div>
+      </div>
+
+      <div class="bike-slide">
+        <div class="numbertext">11 / 11</div>
+        <img loading="lazy" class="slideimg" src="/photos/bike/IMG_0144.jpeg">
+        <div class="text">Finished bike system at night</div>
+      </div>
+
+      <a class="prev" onclick="plusSlides(-1, 15)"><i class="fa-solid fa-chevron-left"></i></a>
+      <a class="next" onclick="plusSlides(1, 15)"><i class="fa-solid fa-chevron-right"></i></a>
+    </div>
+  </div>
+
+  <div class="item" id="timer2">
+    <div class="content-left">
+      <h1 style="margin-top: 0px; margin-bottom: 1vh;">Track Timer v2 <span class="star">*</span></h1>
+
+      <p style="margin-bottom: 1vh;">As the next track and field season rolled around, I wanted to bring back my track
+        timer. I had one big complaint about it, though: setup time. Because it used a laser beam to detect an athlete,
+        I had to precisely position the laser beam, sometimes in bright sunlight. Not fun.</p>
+
+      <p style="margin-bottom: 1vh;">For this version, I decided to eliminate the laser-photoresistor combo and switch
+        to using a LiDAR sensor. This came with two advantages: one, it didn’t need to be precisely positioned, and two,
+        it could detect distance. Detecting distance meant that I could differentiate between different lanes on the
+        track, as lane number one would be much closer than lane number eight. This meant that I could set the timer up
+        so that it would only count athletes in a specific lane, preventing false flags from others crossing the finish
+        line.</p>
+
+      <p style="margin-bottom: 1vh;">I also reworked the UI to use a mini OLED display, giving me more flexibility when
+        designing the interface. I kept automatic start mode while adding a manual start mode, and also added a mode
+        that would give splits for cross country athletes.</p>
+
+      <p style="margin-bottom: 5vh;">This project came out incredibly and fixed basically every issue with the first
+        version. I used it plenty during high school, as did the coaches and other athletes.</p>
+      <div class="photo-button">
+        <a href="https://www.youtube.com/watch?v=6_SI3QzjOwY" style="padding: 1.5vw 3vw;" class="white-button"
+          target="_blank">WATCH VIDEO&emsp;<i class="fa-brands fa-youtube"></i></a>
+      </div>
+    </div>
+    <div class="content-right">
+      <div class="timer2-slide">
+        <div class="numbertext">1 / 7</div>
+        <img class="slideimg" src="/photos/timer2/IMG_0012.JPG">
+        <div class="text">Track timer start module with menu and speaker</div>
+      </div>
+
+      <div class="timer2-slide">
+        <div class="numbertext">2 / 7</div>
+        <img class="slideimg" src="/photos/timer2/IMG_0013.JPG">
+        <div class="text">Track timer finish module with LiDAR sensor</div>
+      </div>
+
+      <div class="timer2-slide">
+        <div class="numbertext">3 / 7</div>
+        <img class="slideimg" src="/photos/timer2/IMG_2952.JPG">
+        <div class="text">Start module with amp, speaker, and 5V step-down module</div>
+      </div>
+
+      <div class="timer2-slide">
+        <div class="numbertext">4 / 7</div>
+        <img class="slideimg" src="/photos/timer2/IMG_2959.JPG">
+        <div class="text">Start module with Arduino, wireless, and OLED screen</div>
+      </div>
+
+      <div class="timer2-slide">
+        <div class="numbertext">5 / 7</div>
+        <img class="slideimg" src="/photos/timer2/IMG_2962.JPG">
+        <div class="text">Finished start module</div>
+      </div>
+
+      <div class="timer2-slide">
+        <div class="numbertext">6 / 7</div>
+        <img class="slideimg" src="/photos/timer2/IMG_0014.JPG">
+        <div class="text">Start module main menu</div>
+      </div>
+
+      <div class="timer2-slide">
+        <div class="numbertext">7 / 7</div>
+        <img class="slideimg" src="/photos/timer2/IMG_1328.JPG">
+        <div class="text">Full system at track</div>
+      </div>
+
+      <a class="prev" onclick="plusSlides(-1, 14)"><i class="fa-solid fa-chevron-left"></i></a>
+      <a class="next" onclick="plusSlides(1, 14)"><i class="fa-solid fa-chevron-right"></i></a>
+    </div>
+  </div>
+
+  <div class="item" id="biosphere">
+    <div class="content-left">
+      <h1 style="margin-top: 0px; margin-bottom: 1vh;">Biosphere</h1>
+
+      <p style="margin-bottom: 1vh;">It’s always fascinated me to see how many sensors exist for a wide range of
+        applications. So when by freshman year biology class told us we had to each build a miniature biosphere, I
+        decided to fit as many sensors into it as I could.</p>
+
+      <p style="margin-bottom: 1vh;">I used a temperature sensor, humidity sensor, soil moisture sensor, water level
+        sensor, air pressure sensor, light sensor, and a UV light sensor, all connected to an Arduino MEGA. Originally,
+        I was planning to use an ESP8266 to send all the information to a web server, but decided that was overly
+        complex for my needs. Instead, to display all the information, I used a small OLED screen that would animate
+        between all the information using bitmap images and text.</p>
+
+      <p style="margin-bottom: 1vh;">It was really fun to work with all those sensors, and to anyone making fun of me
+        for “getting the same grade as everyone else,” I got extra credit muahahaha</p>
+    </div>
+    <div class="content-right">
+      <div class="biosphere-slide">
+        <div class="numbertext">1 / 6</div>
+        <img loading="lazy" class="slideimg" src="/photos/biosphere/IMG_2429.JPG">
+        <div class="text">Completed biosphere</div>
+      </div>
+
+      <div class="biosphere-slide">
+        <div class="numbertext">2 / 6</div>
+        <img loading="lazy" class="slideimg" src="/photos/biosphere/IMG_2397.JPG">
+        <div class="text">Testing sensors with ESP8266</div>
+      </div>
+
+      <div class="biosphere-slide">
+        <div class="numbertext">3 / 6</div>
+        <img loading="lazy" class="slideimg" src="/photos/biosphere/temp.png">
+        <div class="text">Temperature info display</div>
+      </div>
+
+      <div class="biosphere-slide">
+        <div class="numbertext">4 / 6</div>
+        <img loading="lazy" class="slideimg" src="/photos/biosphere/humid.png">
+        <div class="text">Humidity info display</div>
+      </div>
+
+      <div class="biosphere-slide">
+        <div class="numbertext">5 / 6</div>
+        <img loading="lazy" class="slideimg" src="/photos/biosphere/water.png">
+        <div class="text">Water level info display</div>
+      </div>
+
+      <div class="biosphere-slide">
+        <div class="numbertext">6 / 6</div>
+        <img loading="lazy" class="slideimg" src="/photos/biosphere/soil.png">
+        <div class="text">Soil moisture info display</div>
+      </div>
+
+
+      <a class="prev" onclick="plusSlides(-1, 12)"><i class="fa-solid fa-chevron-left"></i></a>
+      <a class="next" onclick="plusSlides(1, 12)"><i class="fa-solid fa-chevron-right"></i></a>
+    </div>
+  </div>
+
+  <div class="item" id="watch">
+    <div class="content-left">
+      <h1 style="margin-top: 0px; margin-bottom: 1vh;">Smart Watch</h1>
+
+      <p style="margin-bottom: 1vh;">One of my favorite saying is “if you can’t afford it, build it for cheaper.”</p>
+
+      <p style="margin-bottom: 1vh;">I’ve lived by this saying through my projects; for example, the scoreboard. So when
+        I wanted an Apple Watch but couldn’t afford one... well you get the idea.</p>
+
+      <p style="margin-bottom: 1vh;">I designed this watch to be as simple yet feature-filled as possible. I wanted it
+        to have a color screen and bluetooth, while not being too big. A lot of DIY watches I had seen just sort of
+        sandwiched all the components on top of each other, which led to a very thick watch.</p>
+
+      <p style="margin-bottom: 1vh;">Instead, I decided to put all the components next to each other. This led to the
+        watch being only around 12mm thick while still boasting all of the features I described earlier.</p>
+
+      <p style="margin-bottom: 1vh;">I designed the UI to be even simpler, using only two buttons to control it. I used
+        bitmap images everywhere to make navigation easier, and added an always on display to make the most out of the
+        OLED screen.</p>
+
+      <p style="margin-bottom: 1vh;">The only large caveat was the battery life, which was abismal, and while I began
+        work on a second version, I never finished it.</p>
+    </div>
+    <div class="content-right">
+      <div class="watch-slide">
+        <div class="numbertext">1 / 12</div>
+        <img loading="lazy" class="slideimg" src="/photos/watch/watch.JPG">
+        <div class="text">Completed smart watch</div>
+      </div>
+
+      <div class="watch-slide">
+        <div class="numbertext">2 / 12</div>
+        <img loading="lazy" class="slideimg" src="/photos/watch/IMG_1228.JPG">
+        <div class="text">All parts: charger, Arduino Pro Mini, bluetooth, OLED display, case</div>
+      </div>
+
+      <div class="watch-slide">
+        <div class="numbertext">3 / 12</div>
+        <img loading="lazy" class="slideimg" src="/photos/watch/IMG_1270.JPG">
+        <div class="text">Button module soldered</div>
+      </div>
+
+      <div class="watch-slide">
+        <div class="numbertext">4 / 12</div>
+        <img loading="lazy" class="slideimg" src="/photos/watch/IMG_1270.png">
+        <div class="text">OLED display test</div>
+      </div>
+
+      <div class="watch-slide">
+        <div class="numbertext">5 / 12</div>
+        <img loading="lazy" class="slideimg" src="/photos/watch/IMG_1271.JPG">
+        <div class="text">Components soldered inside first case prototype</div>
+      </div>
+
+      <div class="watch-slide">
+        <div class="numbertext">6 / 12</div>
+        <img loading="lazy" class="slideimg" src="/photos/watch/IMG_1273.JPG">
+        <div class="text">Components inside second case prototype with thicker walls and rounded edges</div>
+      </div>
+
+      <div class="watch-slide">
+        <div class="numbertext">7 / 12</div>
+        <img loading="lazy" class="slideimg" src="/photos/watch/IMG_1274.JPG">
+        <div class="text">Watch connected to serial adapter to upload code</div>
+      </div>
+
+      <div class="watch-slide">
+        <div class="numbertext">8 / 12</div>
+        <img loading="lazy" class="slideimg" src="/photos/watch/IMG_1275.JPG">
+        <div class="text">Info screen!</div>
+      </div>
+
+      <div class="watch-slide">
+        <div class="numbertext">9 / 12</div>
+        <img loading="lazy" class="slideimg" src="/photos/watch/menu1.png">
+        <div class="text">Home screen menu</div>
+      </div>
+
+      <div class="watch-slide">
+        <div class="numbertext">10 / 12</div>
+        <img loading="lazy" class="slideimg" src="/photos/watch/menu2.png">
+        <div class="text">Settings menu</div>
+      </div>
+
+      <div class="watch-slide">
+        <div class="numbertext">11 / 12</div>
+        <img loading="lazy" class="slideimg" src="/photos/watch/menu3.png">
+        <div class="text">Incoming call display</div>
+      </div>
+
+      <div class="watch-slide">
+        <div class="numbertext">12 / 12</div>
+        <img loading="lazy" class="slideimg" src="/photos/watch/menu4.png">
+        <div class="text">Default clock screen</div>
+      </div>
+
+      <a class="prev" onclick="plusSlides(-1, 7)"><i class="fa-solid fa-chevron-left"></i></a>
+      <a class="next" onclick="plusSlides(1, 7)"><i class="fa-solid fa-chevron-right"></i></a>
+    </div>
+  </div>
+  <div class="item" id="pbm2">
+    <div class="content-left">
+      <h1 style="margin-top: 0px; margin-bottom: 1vh;">Phone by Mako v2</h1>
+
+      <p style="margin-bottom: 1vh;">While version 1 wasn’t exactly a breakthrough in cellular technology, it did teach
+        us a lot about how to run a company and how to make a successful product. Hoping to redesign our product with
+        these new lessons in mind, we began work on Phone by Mako version 2.</p>
+
+      <p style="margin-bottom: 1vh;">To make assembly simpler, Phone by Mako v2 would use a custom printed circuit board
+        (PCB) instead of a regular perfboard. The screen was also upgraded to show color, and the phone’s thickness was
+        made to be half of version 1.</p>
+
+      <p style="margin-bottom: 1vh;">On the software side of things, we added features such as text messaging, the
+        ability to store contacts, and games. We also looked into designing a custom IDE to make changing and uploading
+        code to the phone easier for users.</p>
+
+      <p style="margin-bottom: 1vh;">Unfortunately, shortly into development, cellular providers started to end their 2G
+        and 3G services, meaning we had to use the faster but more complex 4G (LTE) network. We weren’t able to meet our
+        pricepoint with the new technology, and thus decided to shelf the project for the time being.</p>
+    </div>
+    <div class="content-right">
+      <div class="pbm2-slide">
+        <div class="numbertext">1 / 11 </div>
+        <img loading="lazy" class="slideimg" src="/photos/pbm2/v2.JPG">
+        <div class="text">Phone by Mako v2 prototype</div>
+      </div>
+
+      <div class="pbm2-slide">
+        <div class="numbertext">2 / 11 </div>
+        <img loading="lazy" class="slideimg" src="/photos/pbm2/v2case.JPG">
+        <div class="text">Phone by Mako v2 case: thinner, rounded edges</div>
+      </div>
+
+      <div class="pbm2-slide">
+        <div class="numbertext">3 / 11 </div>
+        <img loading="lazy" class="slideimg" src="/photos/pbm2/parts.JPG">
+        <div class="text">Version 2 parts</div>
+      </div>
+
+      <div class="pbm2-slide">
+        <div class="numbertext">4 / 11 </div>
+        <img loading="lazy" class="slideimg" src="/photos/pbm2/IMG_0912.PNG">
+        <div class="text">Concept of custom IDE</div>
+      </div>
+
+      <div class="pbm2-slide">
+        <div class="numbertext">5 / 11 </div>
+        <img loading="lazy" class="slideimg" src="/photos/pbm2/IMG_0937.PNG">
+        <div class="text">Version 2 home screen with colored app icons</div>
+      </div>
+
+      <div class="pbm2-slide">
+        <div class="numbertext">6/ 11 </div>
+        <img loading="lazy" class="slideimg" src="/photos/pbm2/IMG_1220.PNG">
+        <div class="text">New logo</div>
+      </div>
+
+      <div class="pbm2-slide">
+        <div class="numbertext">7 / 11 </div>
+        <img loading="lazy" class="slideimg" src="/photos/pbm2/IMG_1553.JPG">
+        <div class="text">Version 2 home screen running on device</div>
+      </div>
+
+      <div class="pbm2-slide">
+        <div class="numbertext">8 / 11 </div>
+        <img loading="lazy" class="slideimg" src="/photos/pbm2/IMG_1554.JPG">
+        <div class="text">Version 2 back, keypad not yet soldered</div>
+      </div>
+
+      <div class="pbm2-slide">
+        <div class="numbertext">9 / 11 </div>
+        <img loading="lazy" class="slideimg" src="/photos/pbm2/IMG_1555.JPG">
+        <div class="text">Version 2 home screen running on device</div>
+      </div>
+
+      <div class="pbm2-slide">
+        <div class="numbertext">10 / 11 </div>
+        <img loading="lazy" class="slideimg" src="/photos/pbm2/IMG_1562.JPG">
+        <div class="text">Call UI</div>
+      </div>
+
+      <div class="pbm2-slide">
+        <div class="numbertext">11 / 11 </div>
+        <img loading="lazy" class="slideimg" src="/photos/pbm2/IMG_2120.JPG">
+        <div class="text">Collection of Phone by Mako cards, flyers, etc.</div>
+      </div>
+
+      <a class="prev" onclick="plusSlides(-1, 6)"><i class="fa-solid fa-chevron-left"></i></a>
+      <a class="next" onclick="plusSlides(1, 6)"><i class="fa-solid fa-chevron-right"></i></a>
+    </div>
+  </div>
+
+  <div class="item" id="sb">
+    <div class="content-left">
+      <h1 style="margin-top: 0px; margin-bottom: 1vh; font-family: sb; font-weight: 500;"><span
+          style="color:#d1352a">Score</span><span style="color:#f2b933">board</span> <span class="star">*</span></h1>
+
+      <p style="margin-bottom: 1vh;">For my second advanced project, I decided to turn things up a notch and attempt to
+        complete my childhood dream: to build my own scoreboard.</p>
+
+      <p style="margin-bottom: 1vh;">Going into this project, I had many goals I wanted to meet. The scoreboard had to
+        have bar-style digits, it had to be wireless, and (unsurprisingly) it had to have a loud horn.</p>
+
+      <p style="margin-bottom: 1vh;">With these goals in mind, I began building the scoreboard. I laser cut the board
+        face and cut out vinyl stickers for the home and guest labels. I went through dozens of diffuser designs before
+        settling on a 3D printed design that I liked.</p>
+
+      <p style="margin-bottom: 1vh;">For electronics, I used an Arduino UNO for the board and a MEGA for the controller.
+        I used WS2128B addressable LEDs for the digits, which let me control everything with only one data pin. Two
+        nRF24L01 modules allowed the board and controller to talk to each other, being controlled by a keypad and
+        character LCD.</p>
+
+      <p style="margin-bottom: 5vh;">This has to be one of my favorite projects because of the attention to detail in
+        both the design and user experience, as well as how perfectly it matched my vision from the beginning.</p>
+      <div class="photo-button">
+        <a href="https://www.youtube.com/watch?v=zdeKpxZJ_U0" style="padding: 1.5vw 3vw;" class="white-button"
+          target="_blank">WATCH VIDEO&emsp;<i class="fa-brands fa-youtube"></i></a>
+      </div>
+    </div>
+    <div class="content-right">
+      <div class="sb-slide">
+        <div class="numbertext">1 / 36</div>
+        <img loading="lazy" class="slideimg" src="/photos/scoreboard/sbfront.png">
+        <div class="text">Front of scoreboard</div>
+      </div>
+
+      <div class="sb-slide">
+        <div class="numbertext">2 / 36</div>
+        <img loading="lazy" class="slideimg" src="/photos/scoreboard/controller.png">
+        <div class="text">Controller for scoreboard</div>
+      </div>
+
+      <div class="sb-slide">
+        <div class="numbertext">3 / 36</div>
+        <img loading="lazy" class="slideimg" src="/photos/scoreboard/IMG_0200.JPG">
+        <div class="text">Scoreboard outline drawn in Adobe Illustrator</div>
+      </div>
+
+      <div class="sb-slide">
+        <div class="numbertext">4 / 36</div>
+        <img loading="lazy" class="slideimg" src="/photos/scoreboard/IMG_0229.jpeg">
+        <div class="text">Parts laid out</div>
+      </div>
+
+      <div class="sb-slide">
+        <div class="numbertext">5 / 36</div>
+        <img loading="lazy" class="slideimg" src="/photos/scoreboard/IMG_0234.jpeg">
+        <div class="text">Bringing parts to TheShop.Build to laser cut front</div>
+      </div>
+
+      <div class="sb-slide">
+        <div class="numbertext">6 / 36</div>
+        <img loading="lazy" class="slideimg" src="/photos/scoreboard/IMG_0238.jpeg">
+        <div class="text">Outline ready to be cut out</div>
+      </div>
+
+      <div class="sb-slide">
+        <div class="numbertext">7 / 36</div>
+        <img loading="lazy" class="slideimg" src="/photos/scoreboard/IMG_0241.jpeg">
+        <div class="text">Cutting out scoreboard front</div>
+      </div>
+
+      <div class="sb-slide">
+        <div class="numbertext">8 / 36</div>
+        <img loading="lazy" class="slideimg" src="/photos/scoreboard/IMG_0246.jpeg">
+        <div class="text">Laser cutter setup</div>
+      </div>
+
+      <div class="sb-slide">
+        <div class="numbertext">9 / 36</div>
+        <img loading="lazy" class="slideimg" src="/photos/scoreboard/IMG_0257.jpeg">
+        <div class="text">Scoreboard front face cut</div>
+      </div>
+
+      <div class="sb-slide">
+        <div class="numbertext">10 / 36</div>
+        <img loading="lazy" class="slideimg" src="/photos/scoreboard/IMG_0263.jpeg">
+        <div class="text">Parts laid out</div>
+      </div>
+
+      <div class="sb-slide">
+        <div class="numbertext">11 / 36</div>
+        <img loading="lazy" class="slideimg" src="/photos/scoreboard/IMG_0268.jpeg">
+        <div class="text">Cutting out controller</div>
+      </div>
+
+      <div class="sb-slide">
+        <div class="numbertext">12 / 36</div>
+        <img loading="lazy" class="slideimg" src="/photos/scoreboard/IMG_0283.jpeg">
+        <div class="text">Cutting out vinyl stickers</div>
+      </div>
+
+      <div class="sb-slide">
+        <div class="numbertext">13 / 36</div>
+        <img loading="lazy" class="slideimg" src="/photos/scoreboard/IMG_0285.jpeg">
+        <div class="text">Vinyl sticker cut out</div>
+      </div>
+
+      <div class="sb-slide">
+        <div class="numbertext">14 / 36</div>
+        <img loading="lazy" class="slideimg" src="/photos/scoreboard/IMG_0291.jpeg">
+        <div class="text">Cutting out acrylic diffusers (1st iteration)</div>
+      </div>
+
+      <div class="sb-slide">
+        <div class="numbertext">15 / 36</div>
+        <img loading="lazy" class="slideimg" src="/photos/scoreboard/IMG_0294.jpeg">
+        <div class="text">Scoreboard controller cut out</div>
+      </div>
+
+      <div class="sb-slide">
+        <div class="numbertext">16 / 36</div>
+        <img loading="lazy" class="slideimg" src="/photos/scoreboard/IMG_0300.jpeg">
+        <div class="text">Gluing LEDs to holders (1st iteration)</div>
+      </div>
+
+      <div class="sb-slide">
+        <div class="numbertext">17 / 36</div>
+        <img loading="lazy" class="slideimg" src="/photos/scoreboard/IMG_0302.jpeg">
+        <div class="text">LED diffusers complete</div>
+      </div>
+
+      <div class="sb-slide">
+        <div class="numbertext">18 / 36</div>
+        <img loading="lazy" class="slideimg" src="/photos/scoreboard/IMG_0304.jpeg">
+        <div class="text">Scoreboard painted</div>
+      </div>
+
+      <div class="sb-slide">
+        <div class="numbertext">19 / 36</div>
+        <img loading="lazy" class="slideimg" src="/photos/scoreboard/IMG_0315.jpeg">
+        <div class="text">Controller keypad assembly</div>
+      </div>
+
+      <div class="sb-slide">
+        <div class="numbertext">20 / 36</div>
+        <img loading="lazy" class="slideimg" src="/photos/scoreboard/IMG_0324.jpeg">
+        <div class="text">Vinyl stickers attached</div>
+      </div>
+
+      <div class="sb-slide">
+        <div class="numbertext">21 / 36</div>
+        <img loading="lazy" class="slideimg" src="/photos/scoreboard/IMG_0325.JPG">
+        <div class="text">Acrylic diffusers glued, did not work well and many fell out</div>
+      </div>
+
+      <div class="sb-slide">
+        <div class="numbertext">22 / 36</div>
+        <img loading="lazy" class="slideimg" src="/photos/scoreboard/IMG_0338.jpeg">
+        <div class="text">Switched to 3D printed diffusers, worked much better</div>
+      </div>
+
+      <div class="sb-slide">
+        <div class="numbertext">23 / 36</div>
+        <img loading="lazy" class="slideimg" src="/photos/scoreboard/IMG_0344.jpeg">
+        <div class="text">3D printing diffusers</div>
+      </div>
+
+      <div class="sb-slide">
+        <div class="numbertext">24 / 36</div>
+        <img loading="lazy" class="slideimg" src="/photos/scoreboard/IMG_0345.jpeg">
+        <div class="text">Finished diffusers</div>
+      </div>
+
+      <div class="sb-slide">
+        <div class="numbertext">25 / 36</div>
+        <img loading="lazy" class="slideimg" src="/photos/scoreboard/IMG_0353.jpeg">
+        <div class="text">Individual LEDs were too difficult to hook up and didn't work as well as expected, switched to
+          addressable LEDs</div>
+      </div>
+
+      <div class="sb-slide">
+        <div class="numbertext">26 / 36</div>
+        <img loading="lazy" class="slideimg" src="/photos/scoreboard/IMG_0355.jpeg">
+        <div class="text">Finished new LED digits</div>
+      </div>
+
+      <div class="sb-slide">
+        <div class="numbertext">27 / 36</div>
+        <img loading="lazy" class="slideimg" src="/photos/scoreboard/IMG_0356.JPG">
+        <div class="text">All digits complete and laid out</div>
+      </div>
+
+      <div class="sb-slide">
+        <div class="numbertext">28 / 36</div>
+        <img loading="lazy" class="slideimg" src="/photos/scoreboard/IMG_0360.jpeg">
+        <div class="text">Diffuser iterations</div>
+      </div>
+
+      <div class="sb-slide">
+        <div class="numbertext">29 / 36</div>
+        <img loading="lazy" class="slideimg" src="/photos/scoreboard/IMG_0404.jpeg">
+        <div class="text">First lighting test with LEDs</div>
+      </div>
+
+      <div class="sb-slide">
+        <div class="numbertext">30 / 36</div>
+        <img loading="lazy" class="slideimg" src="/photos/scoreboard/IMG_0412.jpeg">
+        <div class="text">Scoreboard outside with sides glued</div>
+      </div>
+
+      <div class="sb-slide">
+        <div class="numbertext">31 / 36</div>
+        <img loading="lazy" class="slideimg" src="/photos/scoreboard/IMG_0449.jpeg">
+        <div class="text">Power bank used to power different components, allowed for easy testing</div>
+      </div>
+
+      <div class="sb-slide">
+        <div class="numbertext">32 / 36</div>
+        <img loading="lazy" class="slideimg" src="/photos/scoreboard/IMG_0500.JPG">
+        <div class="text">Controller half complete with keypad</div>
+      </div>
+
+      <div class="sb-slide">
+        <div class="numbertext">33 / 36</div>
+        <img loading="lazy" class="slideimg" src="/photos/scoreboard/IMG_0504.jpeg">
+        <div class="text">Controller case complete</div>
+      </div>
+
+      <div class="sb-slide">
+        <div class="numbertext">34 / 36</div>
+        <img loading="lazy" class="slideimg" src="/photos/scoreboard/IMG_505.png">
+        <div class="text">First successful scoreboard LED test</div>
+      </div>
+
+      <div class="sb-slide">
+        <div class="numbertext">35 / 36</div>
+        <img loading="lazy" class="slideimg" src="/photos/scoreboard/IMG_1361.JPG">
+        <div class="text">First successful power up of scoreboard</div>
+      </div>
+
+      <div class="sb-slide">
+        <div class="numbertext">36 / 36</div>
+        <img loading="lazy" class="slideimg" src="/photos/scoreboard/IMG_1365.JPG">
+        <div class="text">Scoreboard in use at middle school gym</div>
+      </div>
+
+      <a class="prev" onclick="plusSlides(-1, 4)"><i class="fa-solid fa-chevron-left"></i></a>
+      <a class="next" onclick="plusSlides(1, 4)"><i class="fa-solid fa-chevron-right"></i></a>
+    </div>
+  </div>
+  <div class="content-left">
+    <h1 style="margin-top: 0px; margin-bottom: 1vh;">Early Projects</h1>
+
+    <p style="margin-bottom: 1vh;">I was a maker since day one.</p>
+
+    <p style="margin-bottom: 1vh;">When I was little, my two parents, who were both doctors, gifted me a toy doctor kit.
+      Instead of using it to, you know, do doctor stuff, I opted to turn it into a toilet. I used tape and construction
+      paper to make the handle, and used the bulb from the blood pressure monitor to act as the water level detector.
+      While this toilet didn’t actually work (whew), it still was a prelude to what was to come.</p>
+
+    <p style="margin-bottom: 1vh;">As I grew up, I built lots of small things. I made model rockets out of cardboard;
+      some to launch at sites, others to deploy a parachute that I would test at my local park.</p>
+
+    <p style="margin-bottom: 1vh;">In second grade, I “started” my first company: Timetronics Scoreboards. I designed
+      the website in... Microsoft Word, and made the scoreboards out of cardboard and aluminum foil. Despite not fully
+      working, they did have a functional horn.</p>
+
+    <p style="margin-bottom: 1vh;">For the next few years, I kept building and tinkering with things, like boats,
+      projectors, and computers.</p>
+  </div>
+  <div class="content-right">
+    <div class="early-slide">
+      <div class="numbertext">1 / 3</div>
+      <img class="slideimg" src="/bg/timer.png">
+      <div class="text">Caption Text</div>
+    </div>
+
+    <div class="early-slide">
+      <div class="numbertext">2 / 3</div>
+      <img class="slideimg" src="/bg/watch.png">
+      <div class="text">Caption Two</div>
+    </div>
+
+    <div class="early-slide">
+      <div class="numbertext">3 / 3</div>
+      <img class="slideimg" src="/bg/pbm.png">
+      <div class="text">Caption Three</div>
+    </div>
+
+    <a class="prev" onclick="plusSlides(-1, 0)"><i class="fa-solid fa-chevron-left"></i></a>
+    <a class="next" onclick="plusSlides(1, 0)"><i class="fa-solid fa-chevron-right"></i></a>
+  </div>
+
+  <div class="scroll">
+    <div class="scroll-bar">
+      <span class="year" id="year">2024</span>
+      <div></div>
+    </div>
+  </div>
+
+
+
+  <script src="/projects/slideshow.js"></script>
+  <script>
+    const scrollBar = document.querySelector('.scroll-bar div');
+    const scrollYear = document.querySelector('.scroll-bar .year');
+    const anchor = document.getElementById('year');
+
+    window.onscroll = function () {
+      const scrollTop = window.scrollY || document.documentElement.scrollTop;
+      const scrollHeight = document.documentElement.scrollHeight - window.innerHeight;
+      const scrollPercentage = ((scrollTop / scrollHeight) * (window.innerWidth - scrollBar.offsetWidth)) * 0.8;
+      const offset = scrollTop / scrollHeight;
+
+      scrollBar.style.transform = `translateX(${scrollPercentage}px)`;
+      scrollYear.style.transform = `translateX(${scrollPercentage}px)`;
+
+      if (offset < .184) {
+        anchor.textContent = "2025";
+
+      } else if (offset < .229) {
+        anchor.textContent = "2024";
+
+      } else if (offset < .268) {
+        anchor.textContent = "2023";
+
+      } else if (offset < .467) {
+        anchor.textContent = "2022";
+
+      } else {
+        anchor.textContent = "< 2021";
+      }
+    };
+  </script>
+
+</body>
+
+</html>

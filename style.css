@@ -1,0 +1,243 @@
+.main {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     height: 100vh;
+     margin: 0;
+   }
+   
+   .text {
+     flex: 2;
+     font-weight: bold;
+     padding: 10px;
+   }
+   
+   .image {
+     flex: 1;
+     text-align: center;
+   }
+   
+   .nospace {
+     white-space: pre;
+   }
+   
+   body {
+     font-family: 'Montserrat', sans-serif;
+     font-weight: 100;
+     background-color: #1A1A1A;
+   }
+   
+   h1 {
+     color: white;
+     font-size: 6vw;
+     font-weight: 700;
+   }
+   
+   h2 {
+     color: #0CFFBB;
+     font-size: 3vw;
+     font-weight: 600;
+   }
+   
+   h3 {
+     color: white;
+     font-weight: 500;
+     font-size: 1.5vw;
+   }
+   
+   p {
+     color: white;
+     font-size: 0.9vw;
+     font-weight: regular;
+   }
+   
+   .accent {
+     color: #0CFFBB;
+   }
+   
+   .blue-button {
+     font-weight: 500;
+     display: inline-block;
+     padding: 10px 20px;
+     background-color: #0CFFBB;
+     color: black;
+     border: none;
+     border-radius: 100px;
+     cursor: pointer;
+     text-align: center;
+     text-decoration: none;
+     font-size: 1.5vw;
+   }
+   
+   .white-button {
+     font-family: "Book";
+     font-weight: 500;
+     display: inline-block;
+     padding: 10px 20px;
+     background-color: #4D4D4D;
+     color: white;
+     border: 0px solid #4D4D4D;
+     border-radius: 100px;
+     cursor: pointer;
+     text-align: center;
+     text-decoration: none;
+     font-size: 1.5vw;
+   }
+   
+   .blue-button:hover {
+     background-color: #439afe;
+     transition: 0.3s;
+   }
+   
+   .white-button:hover {
+     background-color: #6b6b6b;
+     transition: 0.3s;
+   }
+   
+   .button-grid {
+     border-collapse: collapse;
+     width: 50%;
+     margin: 0 auto;
+   }
+   
+   .square-button {
+     display: inline-block;
+     width: 14vw;
+     height: 14vw;
+     margin: 1.5vw;
+     border: none;
+     cursor: pointer;
+     border-radius: 1.5vw;
+     background-color: #282828;
+     font-weight: 500;
+     font-size: 1.7vw;
+     padding: 1vw;
+     color: #ffffff;
+   }
+   
+   .title-bar {
+     background-color: #1A1A1A;
+     color: #ffffff;
+     padding: 20px 0px;
+     position: fixed;
+     top: 0;
+     width: 100%;
+     text-align: center;
+     z-index: 999;
+   }
+   
+   .titlebutton {
+     color: #ffffff;
+     background-color: transparent;
+     text-decoration: none;
+     margin: 0 15px;
+     border: 0px;
+     font-size: 14px;
+     position: relative;
+     transition: 0.5s;
+     padding: 8px;
+   }
+   
+   .titlebutton:before {
+     content: '';
+     border-bottom: 2px solid #ffffff;
+     padding: 0px;
+     position: absolute;
+     bottom: 0;
+     left: 0;
+     right: 0;
+     margin: 0 auto;
+     width: 0;
+     transition: 0.3s;
+   }
+   
+   .selected:before {
+     content: '';
+     border-bottom: 2px solid #0CFFBB;
+     padding: 0 10px;
+     position: absolute;
+     bottom: 0;
+     left: 0;
+     right: 0;
+     margin: 0 auto;
+     width: 0;
+     transition: 0.3s;
+   }
+   
+   .titlebutton:hover:before {
+     color: #439afe;
+     width: 100%;
+     padding: 0;
+   }
+   
+   .selected {
+     font-weight: 500;
+     color: #0CFFBB;
+   }
+   
+   
+   
+   .cyclet {
+     background-image: url('bg/cyclet.jpg');
+     background-size: cover;
+     background-position: center;
+   }
+   
+   .sdbike {
+     background-image: url('bg/sdbike.png');
+     background-size: cover;
+     background-position: center;
+   }
+   
+   .prelude {
+     background-image: url('bg/prelude.png');
+     background-size: cover;
+     background-position: center;
+   }
+   
+   .quizza {
+     background-image: url('bg/quizza.png');
+     background-size: cover;
+     background-position: center;
+   }
+   
+   .qar {
+     background-image: url('bg/qar.png');
+     background-size: cover;
+     background-position: center;
+   }
+   
+   @font-face {
+       font-family: Book;
+       src: url(/fonts/Montserrat.ttf);
+   }
+   
+   @font-face {
+       font-family: Comfortaa;
+       src: url(/fonts/Comfortaa.ttf);
+   }
+   
+   @font-face {
+       font-family: Kumbh Sans;
+       src: url(/fonts/KumbhSans.ttf);
+   }
+   
+   @font-face {
+       font-family: sb;
+       src: url(/fonts/sb.ttf);
+   }
+   
+   @font-face {
+       font-family: calc;
+       src: url(/fonts/calc.ttf);
+   }
+   
+   @font-face {
+       font-family: eightbc;
+       src: url(/fonts/8bc.ttf);
+   }
+   
+   @font-face {
+       font-family: brigendis;
+       src: url(/fonts/brigendis.otf);
+   }
